@@ -446,7 +446,9 @@ nav .fas{
     padding: 0 30px;
    }
 
-  
+   #contact .contactheading{
+    margin-bottom: -10px;
+   }
 
     .about-col-1, .about-col-2{
         flex-basis: 100%;
