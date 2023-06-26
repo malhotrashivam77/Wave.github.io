@@ -309,6 +309,37 @@ form input, form textarea{
     border-radius: 6px;
 }
 
+.loading {
+    /* Styles for the loading state */
+    pointer-events: none; /* Disable form interaction during loading */
+    opacity: 0.7; /* Reduce opacity to indicate loading */
+    position: relative; /* Enable relative positioning for the loading spinner */
+  }
+  
+  .loading::after {
+    /* Loading spinner styles */
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    /* Animation for the loading spinner */
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
 
 form btn2{
     padding: 14px 60px;
@@ -416,7 +447,7 @@ nav .fas{
 
 
    #contact{
-    height: auto;
+    margin-top: 700px;
     padding: 0 30px;
    }
 
@@ -445,11 +476,11 @@ nav .fas{
     .contact-right .btn{
         margin-left: 37%;
     }
+
 .copyright{
         font-size: 10px;
-        margin-top: 40px;
-        margin-bottom: -10px;
-        padding: 10px 20px;
+        margin-top: 220px;
+        padding: 5px 20px;
         background-color: #fff;
     }
     
@@ -457,7 +488,8 @@ nav .fas{
 
 
 #msg{
-    color: #ff004f;
+    color: #4800ff;
     margin-top: -40px;
+    margin-left: 120px;
     display: block;
 }
