@@ -1,7 +1,7 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname) {
+function opentab(tabname, event) {
   for (var i = 0; i < tablinks.length; i++) {
     tablinks[i].classList.remove("active-link");
   }
