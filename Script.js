@@ -22,6 +22,21 @@ function closemenu() {
   sidemenu.style.right = "-200px";
 }
 
+// ------readmore-------
+
+function toggleContent() {
+    var moreContent = document.getElementById("more-content");
+    var readMoreLink = document.getElementById("read-more-link");
+
+    if (moreContent.style.display === "none") {
+        moreContent.style.display = "block";
+        readMoreLink.textContent = "Read Less";
+    } else {
+        moreContent.style.display = "none";
+        readMoreLink.textContent = "Read More";
+    }
+}
+
 // -----submit----
 
 
