@@ -29,13 +29,12 @@ p{line-height: 20pt;}
 
 .container{
     padding: 10px 10%;
-    text-align: center;
     max-width: 600px;
-    margin: 0 auto;
+        margin:0 auto;
 }
 
-
 .read-more-button {
+    margin-left: 45%;
     display: inline-block;
     margin-top: 10px;
     padding: 8px 20px;
@@ -45,7 +44,7 @@ p{line-height: 20pt;}
     font-size: 16px;
     text-decoration: none;
     cursor: pointer;
-    color: #4800ff;
+    color: #4800ff!important;
 }
 
 .container .header-section .paragraph{
@@ -336,6 +335,10 @@ nav .fas{
         font-size: 10px;
     }
 
+    .read-more-button {
+    margin-left: 35%;
+}
+
     .fa-ellipsis-h:before, .fa-ellipsis:before {
         margin-right: 20px;
         /* margin-top: 40px; */
@@ -345,7 +348,7 @@ nav .fas{
 
     .header-text{
         margin-top: 25%;
-        margin-left: 10px;
+        margin-left: 60px;
         font-size: 15px;
     }
     .header-text h1{
@@ -358,10 +361,7 @@ nav .fas{
         margin-left: -60px;
     }
 
-    .header-text .btn{
-        font-size: 15px;
-        margin-left: 30px;
-    }
+    
 
     nav .fas{
         display: block;
@@ -418,7 +418,9 @@ nav .fas{
     .about-col-2{
         font-size: 14px;
     }
-
+    .container .contact-left{
+        text-align: center;
+    }
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
@@ -427,6 +429,9 @@ nav .fas{
         flex-basis: 100%;
     }
 
+    .contact-right .btn{
+        margin-left: 3%;
+    }
 .copyright{
         font-size: 10px;
         margin-top: 40px;
