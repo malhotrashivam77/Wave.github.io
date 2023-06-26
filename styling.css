@@ -162,6 +162,7 @@ nav ul li a:hover::after{
 
 .ourwork .title{
     color: #4800ff;
+    margin-top: 40px;
 }
 
 .box{
@@ -180,7 +181,7 @@ nav ul li a:hover::after{
     color: white;
 }
 
-.carousel-indicators{
+/* .carousel-indicators{
     position: absolute;
     right: 0;
     bottom: -60px!important;
@@ -188,7 +189,7 @@ nav ul li a:hover::after{
 
 .carousel-indicators li{
     background-color: #4800ff!important;
-}
+} */
 
 .box a{
     position: relative;
@@ -212,6 +213,7 @@ nav ul li a:hover::after{
 .ourwork {
     width: 100%;
     height: 100vh;
+    margin-bottom: -200px;
 }
 
 
@@ -440,7 +442,7 @@ nav .fas{
 
 
    #contact{
-    margin-top: 500px;
+    margin-top: 800px;
     padding: 0 30px;
    }
 
