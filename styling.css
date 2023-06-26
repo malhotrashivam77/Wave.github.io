@@ -212,6 +212,11 @@ nav ul li a:hover::after{
     color: #4800ff;
 }
 
+#contact{
+    padding: 10px 0;
+    margin-top: -50px;
+}
+
 .contact-left{
     flex-basis: 35%;
 }
@@ -268,7 +273,7 @@ form input, form textarea{
     border: 0;
     outline: none;
     background: #e7e5e5;
-    padding: 15px;
+    padding: 10px;
     margin: 15px 0;
     color: #000000;
     font-size: 18px;
@@ -289,7 +294,7 @@ form btn2{
     padding: 10px 0;
     background: #e2dddd;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 
@@ -300,7 +305,7 @@ nav .fas{
 }
 
 
-@media only screen and (max-width: 600px){
+@media (max-width: 768px){
     
     #header{
        background-image: url(images/mbbg.png);
@@ -332,11 +337,12 @@ nav .fas{
     nav .fas{
         display: block;
         font-size: 25px;
-        margin-top: 10px;
+        margin-top: px;
+        margin-right: 10px;
         
     }
     nav ul{
-        background: #ff004f;
+        background: #4800ff;
         position: fixed;
         top: 0;
         right: -200px;
@@ -352,6 +358,13 @@ nav .fas{
         margin: 25px;
     }
 
+    nav ul li a {
+        color: rgb(255 255 255);
+        text-decoration: none!important;
+        font-size: 18px;
+        position: relative;
+    }
+
     nav ul .fas{
         position: absolute;
         top: 25px;
@@ -359,14 +372,14 @@ nav .fas{
         cursor: pointer;
     }
 
-    #conatact{
-        margin-top: 100px;
-    }
 
-    .sub-title{
-        font-size: 40px;
-        text-align: center;
-    }
+   #contact{
+    height: auto;
+    margin-top: 700px;
+    padding: 0 30px;
+   }
+
+
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
@@ -385,9 +398,14 @@ nav .fas{
         flex-basis: 100%;
     }
 
-    .copyright{
-        font-size: 14px;
+.copyright{
+        font-size: 10px;
+        margin-top: 40px;
+        margin-bottom: -10px;
+        padding: 10px 20px;
+        background-color: #fff;
     }
+    
 }
 
 
