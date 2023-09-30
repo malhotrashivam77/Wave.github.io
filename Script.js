@@ -22,6 +22,36 @@ function closemenu() {
   sidemenu.style.right = "-200px";
 }
 
+// word changing
+
+const words = ["ideas", "dreams", "visions", "goals"];
+  
+      // Index to keep track of the current word
+      let currentWordIndex = 0;
+  
+      // Get the <span> element by its id
+      const wordsSpan = document.getElementById("words");
+  
+      // Function to update the text in the <span>
+      function updateWord() {
+          // Set the text to the current word
+          wordsSpan.textContent = words[currentWordIndex];
+  
+          // Increment the index for the next word
+          currentWordIndex++;
+  
+          // If we've reached the end of the array, start over
+          if (currentWordIndex === words.length) {
+              currentWordIndex = 0;
+          }
+      }
+  
+      // Call the updateWord function initially
+      updateWord();
+  
+      // Set an interval to call the updateWord function every 3 seconds
+      setInterval(updateWord, 3000);
+
 // ------readmore-------
 
 function toggleContent() {
