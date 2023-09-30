@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background: #e7e2e2;
+    background: #f2f2f2;
     color: #4800ff;
 }
 
@@ -56,14 +56,14 @@ p{line-height: 20pt;}
 
 
 .titlename{
-    font-size: 30px;
+    font-size: 40px;
     margin: 10px;
     color: #4800ff;
     cursor: pointer;
 }
 
 .titlename p{
-    font-size: 10px;
+    font-size: 15px;
     margin: -10px;
     margin-left: 0px;
     color: #4800ff;
