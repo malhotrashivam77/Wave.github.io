@@ -11,6 +11,7 @@ html{
 
 body{
     background: #f2f2f2;
+    
     color: #4800ff;
 }
 
@@ -26,11 +27,20 @@ p{line-height: 20pt;}
   background-size: cover;
   position: relative;
 }
+.header-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  margin-left: -100px;
+}
 
 .container{
     padding: 10px 10%;
     max-width: 600px;
         margin:0 auto;
+        
 }
 
 .read-more-button {
@@ -53,7 +63,37 @@ p{line-height: 20pt;}
     margin-top: -20px;
     color: #4800ff;
 }
+.box {
+    height: 100%; /* Set a fixed height for the box */
+    overflow-y: auto; /* Add a vertical scrollbar when the content overflows */
+}
 
+/* Optionally, you can set a max-height for the text to control its size */
+.box p {
+    max-height: 150px; /* Adjust the max height as needed */
+    overflow: auto; /* Add a scrollbar if the text exceeds the max height */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+.box::-webkit-scrollbar-thumb {
+    background-color: #4800ff; /* Set the color of the thumb */
+    border-radius: 4px; /* Add rounded corners to the thumb */
+}
+
+/* Style the scrollbar track (the area the thumb moves along) */
+.box::-webkit-scrollbar-track {
+    background-color: #f2f2f2; /* Set the color of the track */
+    border-radius: 4px; /* Add rounded corners to the track */
+}
+
+/* Optionally, hide the scrollbar when not hovering over it */
+.box::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+}
+
+.box:hover::-webkit-scrollbar {
+    width: 12px; /* Set a wider width when hovering over the box */
+}
 
 .titlename{
     font-size: 40px;
@@ -381,15 +421,25 @@ nav .fas{
     .titlename p{
         font-size: 10px;
     }
+    #read-more-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 
     .read-more-button {
-    margin-left: 35%;
+    /* margin-left: 35%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
     .fa-ellipsis-h:before, .fa-ellipsis:before {
         margin-right: 20px;
         /* margin-top: 40px; */
         content: "\f141";
+        
     }
 
 
@@ -447,10 +497,10 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
-
+    
 
    #contact{
-    margin-top: 800px;
+    margin-top: 900px;
     padding: 0 30px;
    }
 
