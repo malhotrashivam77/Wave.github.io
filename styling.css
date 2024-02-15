@@ -429,7 +429,7 @@ nav .fas{
     
 
     .read-more-button {
-    /* margin-left: 35%; */
+        margin: 0 0px 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
